@@ -1,0 +1,28 @@
+#first{
+    background-color: aqua;
+    width: 50%;
+}
+#second{
+    color: white;
+    background-color:red;
+    width: 40%;
+}
+
+.bg-yellow{
+    background-color: yellow;
+    color:purple;
+}
+
+.blue{
+    color: blue;
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font:normal 20px arial;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */

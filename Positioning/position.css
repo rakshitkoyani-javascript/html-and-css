@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+.title{
+    text-align: center;
+    font-size: larger;
+    display: block;
+    font-weight: bolder;
+}
+
+.fixed {
+    font-size: larger;
+    text-decoration: underline;
+    position: fixed;
+    top: auto;
+    right: 0;
+    font-weight: bolder;
+    
+}
+
+/* container has relative position */
+
+.container{
+    position: relative;
+}
+.imgs{
+    height: auto;
+    width: 100%;
+    opacity: 0.7;
+}
+/* text over the image with absolute position */
+
+.tl{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: larger;
+}
+.tr{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: larger;
+}
+.bl{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: larger;
+}
+.br{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: larger;
+}
+.ct{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+}

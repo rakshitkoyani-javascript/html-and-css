@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title{
+            text-decoration: underline;
+        }
+        div>p{
+            font-size: large;
+            text-transform: uppercase;
+        }
+        div>p::first-letter{
+            font-size: xx-large;
+            color: red;
+
+        }
+        p.c1{
+            color: green;
+        }
+        .animal>.c1{
+            color: red;
+            font-weight: bold;
+        }
+        .animal>.c2:last-child{
+            text-decoration: underline;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2 id="title">Relative selectors</h2>
+    <div class="Foods">
+        <p id="orange" class="fruit c1">orange</p>
+        <span id="Mengo" class="fruit c1">Mengo</span>
+        <p id="apple" class="fruit c1">apple</p>
+        <span id="potato" class="vegetable c2">potato</span>
+        <p id="tomato" class="vegetable c2">tomato</p>
+    </div>
+    <br><br>
+    <div class="animal">
+        <div class="c1">cow</div>
+        <div class="c1">goat</div>
+        <div class="c1">sheep</div>
+        <h3 class="c2">lion</h3>
+        <h3 class="c2">tiger</h3>
+    </div>
+</body>
+</html>
