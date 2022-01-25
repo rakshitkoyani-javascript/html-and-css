@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flipkart.css">
+    <title>Flipkart</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <!-- navbar  -->
+    <nav class="navbar bg-primary d-flex flex-wrap justify-content-center p-0">
+        <div class="container">
+            <div class="nav-img nav-item ms-md-5 me-sm-2">
+                <!--Flipkart Logo-->
+                <img src="./images/flipkartLogo.jpg" alt="logo" class="img" height="40">
+            </div>
+            <div class="search nav-item me-sm-5 ms-0 flex-grow-1">
+                <form class="input-group input-group-sm">
+                    <!--Searchbar with search button-->
+                    <input type="search" id="nav-search" class="form-control w-80" placeholder="Search for Products,brans and more">
+                    <span class="input-group-text bg-white">
+                        <button type="submit" class="searchBtn">    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-primary" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </span>
+                </form>
+            </div>
+            <div class="lBtn nav-item ">
+                <!--login button-->
+                <a href="#login" class="nav-link bg-white text-primary text-center">Login</a>
+            </div>
+            <div class="dropdown ms-sm-3">
+                <!--DropDown Menu for More-->
+                <a href="#more" class="nav-link dropdown-toggle text-white" id="navbarDrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDrop">
+                    <li>
+                        <a class="dropdown-item" href="#1">Notification Preference</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#2">Sell On Flipkart</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#3">Advertise</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart nav-item">
+                <!--cart with icon-->
+                <a class="nav-link text-white" href="#cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart text-white" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <span>
+                    Cart
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- category menu  -->
+    <div class="menu bg-white d-flex justify-content-center flex-wrap container-fluid py-2 d-block mx-auto">
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/topOffers.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Top-Offers</div>
+            </a>
+        </div>
+
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/mobiles.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Mobiles</div>
+            </a>
+        </div>
+    
+
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/fashion.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Fashion</div>
+            </a>
+        </div>
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/electronics.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Electronics</div>
+            </a>
+        </div>
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/travel.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Travel</div>
+            </a>
+        </div>
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/home.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Home</div>
+            </a>
+        </div>
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/appliances.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Appliances</div>
+            </a>
+        </div>
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/furniture.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Furniture</div>
+            </a>
+        </div>
+        <div class="menu-item me-5">
+            <a href="#menuitem" class="text-dark">
+                <img src="./images/Beauty.png" alt="menuItem" class="menuImg">
+                <div class="menuDisc text-center">Beauty</div>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid main">
+    <!-- deal of the day main part -->
+        <div class="dealday mt-4 justify-content-center container d-flex">
+            <div class="ms-0 bg-white flex-grow-5 me-4 deal-left">
+                <div class="p-sm-2 d-flex" style="border-bottom : 1px solid rgb(179, 179, 179)">
+                    <span style="font-size: large;" class="fw-bold"> Deal of the Day</span>
+                    <span class="text-muted ms-sm-3">
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg" style="max-height: 18px;" alt="clock">22:07:36 Left
+                    </span>
+                    <button type="button" class="btn btn-sm btn-primary ms-auto">View All</button>
+                </div>
+                <!-- Shopping items under deal  -->
+                <div class="bg-white d-flex justify-content-start flex-wrap container-fluid py-3">
+                    <div class="deal-item mx-3">
+                        <a href="#dealitem">
+                            <img src="./images/watch.jpeg" alt="dealItem" class="dealImg" >
+                            <!--Image-->
+                            <div class="dealDisc text-center fw-bold mt-2">Casio, Fastrack, Sonata...</div>
+                            <!--Image Description-->
+                            <div class="dealDisc deal-off text-success text-center">Upto 80% Off</div>
+                            <div class="dealDisc text-muted text-center">Knockout Deals</div>
+                        </a>
+                    </div>
+                    <div class="deal-item mx-3">
+                        <a href="#dealitem">
+                            <img src="./images/homeDecor.jpeg" alt="dealItem" class="dealImg" height="150px">
+                            <!--Image-->
+                            <div class="dealDisc text-center fw-bold mt-2">Home temples and more</div>
+                            <!--Image Description-->
+                            <div class="dealDisc deal-off text-success text-center">Upto 10% Off</div>
+                            <div class="dealDisc text-muted text-center">Space saving furniture</div>
+                        </a>
+                    </div>
+                    <div class="deal-item mx-3">
+                        <a href="#dealitem">
+                            <img src="./images/cases.jpeg" alt="dealItem" class="dealImg" height="150px">
+                            <!--Image-->
+                            <div class="dealDisc text-center fw-bold mt-2">Premium tablet cases</div>
+                            <!--Image Description-->
+                            <div class="dealDisc deal-off text-success text-center">Extra 10% Off</div>
+                            <div class="dealDisc text-muted text-center">For All Top Models</div>
+                        </a>    
+                    </div>
+                    <div class="deal-item mx-3">
+                        <a href="#dealitem">
+                            <img src="./images/homeDecor2.jpeg" alt="dealItem" class="dealImg" height="150px">
+                            <!--Image-->
+                            <div class="dealDisc text-center fw-bold mt-2">Best of Home Decor</div>
+                            <!--Image Description-->
+                            <div class="dealDisc deal-off text-success text-center">from 79 ₹</div>
+                            <div class="dealDisc text-muted text-center">Lowest Price ever</div>
+                        </a>
+                    </div>
+                    <div class="deal-item mx-3">
+                        <a href="#dealitem">
+                            <img src="./images/jacket.jpeg" alt="dealItem" class="dealImg" height="150px">
+                            <!--Image-->
+                            <div class="dealDisc text-center fw-bold mt-2">Metronaut, Provague &..</div>
+                            <!--Image Description-->
+                            <div class="dealDisc deal-off text-success text-center">From ₹249+Extra 10% Off</div>
+                            <div class="dealDisc text-muted text-center">Jackets, Dresses & more</div>
+                        </a>
+                    </div>         
+                    <div class="deal-item mx-3">
+                        <a href="#dealitem">
+                            <img src="./images/lava.jpeg" alt="dealItem" class="dealImg" height="150px">
+                            <!--Image-->
+                            <div class="dealDisc text-center fw-bold mt-2">LAVA A1500</div>
+                            <!--Image Description-->
+                            <div class="dealDisc deal-off text-success text-center">Flat 830₹ off</div>
+                            <div class="dealDisc text-muted text-center">Now 999 ₹</div>
+                        </a>
+                    </div>
+                </div>                        
+            </div>
+            <!-- right side banner   -->
+            <div class="deal d-block mx-auto">
+                <img src="./images/sideImage.jpg" alt="deal" class="d-block mx-auto">
+            </div>
+        </div>
+
+        <!-- shop now  -->
+        <div class="container shopListH p-1 ps-3 mt-3 bg-white" >
+            <!-- Shopping List header -->
+            <div class="float-start" style="font-size: large;" >
+                <div class="fw-bold">Books And Music Instruments</div>
+                <div class="text-muted">Shop Now!</div>
+            </div>
+            <button type="button" class="btn btn-primary float-end">View All</button>
+        </div>
+        <!-- Shopping list item  -->
+        <div class="container bg-white d-flex flex-wrap shopItem justify-content-start">
+            <div class="deal-item ms-5">
+                <a href="#dealitem">
+                    <img src="./images/harmonium.jpeg" alt="Harmoniums" class="dealImg">
+                    <div class="dealDisc text-center fw-bold mt-2">Harmoniums</div>
+                    <div class="dealDisc deal-off text-success text-center">Upto 60% Off</div>
+                    <div class="dealDisc text-muted text-center">Shop now!!</div>
+                </a>
+            </div>
+            <div class="deal-item ms-5">
+                <a href="#dealitem">
+                    <img src="./images/flute.jpeg" alt="Flutes" class="dealImg">
+                    <div class="dealDisc text-center fw-bold mt-2">Flutes</div>
+                    <div class="dealDisc deal-off text-success text-center">Upto 80% Off</div>
+                    <div class="dealDisc text-muted text-center">Shop now!!</div>
+                </a>
+            </div>
+            <div class="deal-item ms-5">
+                <a href="#dealitem">
+                    <img src="./images/guitar.jpeg" alt="Guitars" class="dealImg">
+                    <div class="dealDisc text-center fw-bold mt-2"> Guitars</div>
+                    <div class="dealDisc deal-off text-success text-center">Starting ₹1799</div>
+                    <div class="dealDisc text-muted text-center">Shop now!!</div>
+                </a>
+            </div>
+            <div class="deal-item ms-5">
+                <a href="#dealitem">
+                    <img src="./images/music.jpeg" alt="Musical Accessories" class="dealImg">
+                    <div class="dealDisc text-center fw-bold mt-2">Musical Accessories</div>
+                    <div class="dealDisc deal-off text-success text-center">Upto 80% Off</div>
+                    <div class="dealDisc text-muted text-center">Shop now!!</div>
+                </a>
+            </div>
+            <div class="deal-item ms-5">
+                <a href="#dealitem">
+                    <img src="./images/mic.jpeg" alt="Microphone Accessories" class="dealImg">
+                    <div class="dealDisc text-center fw-bold mt-2">Microphone Accessories</div>
+                    <div class="dealDisc deal-off text-success text-center">Upto 80% Off</div>
+                    <div class="dealDisc text-muted text-center">Shop now!!</div>
+                </a>
+            </div>
+            <div class="deal-item ms-3">
+                <a href="#dealitem">
+                    <img src="./images/guitar.jpeg" alt="Acoustic Guitars" class="dealImg">
+                    <div class="dealDisc text-center fw-bold mt-2">Acoustic Guitars</div>
+                    <div class="dealDisc deal-off text-success text-center">Starting ₹1999</div>
+                    <div class="dealDisc text-muted text-center">By Reveal</div>
+                </a>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>                                                                                                     
+
